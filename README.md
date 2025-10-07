@@ -22,7 +22,7 @@ A peer-to-peer laptop marketplace built for university students, focusing on aca
 Predicts 11 musical attributes from full-length audio using a Random Forest baseline and a GRU-based RNN.
 - End-to-end pipeline: YouTube scraping, Librosa feature extraction, leakage-safe splits
 - Best Test MSE: 3.97 with GRU after hyperparameter tuning
-- Focus on per-feature error analysis and robust evaluation  
+- Focus on per-feature error analysis and model evaluation  
 [Repo: github.com/Mfurlan03/multi-output-audio-regression]
 
 ### NBA Draft Success Prediction

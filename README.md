@@ -33,28 +33,12 @@ Classifies NBA draft prospects into career outcome tiers using college stats, ph
 
 ---
 
-## How I Work
-
-- Reproducible by default: environment files, seed control, Makefile/CLI, and clear data contracts
-- Evaluation-first: confusion matrices, regression heatmaps, and error slices; not just one metric
-- Practical dashboards: fast KPIs, what changed diffs, and minimal friction for non-technical users
-
----
-
-## Toolbox
+## Skills
 
 - Core: Python, PyTorch, NumPy/Pandas, scikit-learn
 - Data/Vis: Tableau, Power BI, Matplotlib
 - Ops: Git, VS Code, Colab/Jupyter
 - Also used: SQL, Java, C++, R, MATLAB, HTML/CSS/JS
-
----
-
-## What's Next
-
-- A reusable ML project template with configs, metrics, and report generation
-- A time-series forecasting bench with honest backtesting (ops/supply chain flavor)
-- Lightweight experiment utilities for ablations and error analysis
 
 If you'd like to collaborate or have a dataset that needs a thoughtful approach, feel free to reach out!
 

@@ -16,28 +16,28 @@ A peer-to-peer laptop marketplace built for university students, focusing on aca
 - University email registration and JWT-based login with Buyer/Seller roles
 - Listings with detailed specs, wishlists with target prices, and price comparison against external markets
 - Built with Java 17, Spring Boot, Docker, and Swagger API docs  
-[Repo  github.com/Mfurlan03/campustech-connect]
+[Repo: github.com/Mfurlan03/campustech-connect]
 
 ### Multi-Output Audio Feature Regression
 Predicts 11 musical attributes from full-length audio using a Random Forest baseline and a GRU-based RNN.
 - End-to-end pipeline: YouTube scraping, Librosa feature extraction, leakage-safe splits
 - Best Test MSE: 3.97 with GRU after hyperparameter tuning
 - Focus on per-feature error analysis and robust evaluation  
-[Repo  github.com/Mfurlan03/multi-output-audio-regression]
+[Repo: github.com/Mfurlan03/multi-output-audio-regression]
 
 ### NBA Draft Success Prediction
 Classifies NBA draft prospects into career outcome tiers using college stats, physical attributes, and draft metadata.
 - Compares interpretable baselines with neural networks
 - Includes data cleaning, feature engineering, and calibration analysis  
-[Repo  github.com/Mfurlan03/nba-draft-success]
+[Repo: github.com/Mfurlan03/nba-draft-success]
 
 ---
 
 ## How I Work
 
 - Reproducible by default: environment files, seed control, Makefile/CLI, and clear data contracts
-- Evaluation-first: confusion matrices, regression heatmaps, and error slicesnot just one metric
-- Practical dashboards: fast KPIs, what changed diffs, and minimal friction for non-technical users
+- Evaluation-first: confusion matrices, regression heatmaps, and error slices; not just one metric
+- Practical dashboards: fast KPIs, what changed diffs, and minimal friction for non-technical users
 
 ---
 
@@ -50,13 +50,13 @@ Classifies NBA draft prospects into career outcome tiers using college stats, ph
 
 ---
 
-## What Next
+## What's Next
 
 - A reusable ML project template with configs, metrics, and report generation
 - A time-series forecasting bench with honest backtesting (ops/supply chain flavor)
 - Lightweight experiment utilities for ablations and error analysis
 
-If you like to collaborate or have a dataset that needs a thoughtful approach, feel free to reach out!
+If you'd like to collaborate or have a dataset that needs a thoughtful approach, feel free to reach out!
 
 ---
 

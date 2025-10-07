@@ -1,6 +1,6 @@
 # Hey, I’m Michael Furlano 👋
 
-I’m an Industrial Engineering student at the University of Toronto (’26) who enjoys building practical ML systems—turning raw signals (audio, images, telematics) into clear decisions and dashboards. I care about clean data paths, honest evaluation, and shipping work that others can actually use.
+I’m an Industrial Engineering student at the University of Toronto (’26) who enjoys building practical ML systems, turning raw signals (audio, images, telematics) into clear decisions and dashboards. I care about clean data paths, honest evaluation, and shipping work that others can actually use.
 
 - 🔭 Currently exploring: time series models for operations, diffusion-driven data augmentation, and telemetry-based safety insights
 - 🧪 Interests: experiment design, error analysis, and explainable metrics—not just leaderboard numbers

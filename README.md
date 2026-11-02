@@ -1,60 +1,63 @@
-# Hey, I’m Michael 👋
+# Hey, I'm Michael 👋
 
-I’m an Industrial Engineering student at the University of Toronto, Class of 2026. I like working on problems where the data is messy, imperfect, and very real.
+ML engineer with an Industrial Engineering background (University of Toronto, Class of 2026).
+I build ML systems where the hard part isn't fitting a model but knowing whether to trust it:
+evaluation harnesses, leakage checks, honest baselines, and the engineering around them
+(APIs, tests, CI, containers).
 
-Most of my projects sit at the intersection of data, modeling, and decision making. I am especially drawn to work where the challenge is not just building a model, but understanding what the data actually represents, setting things up thoughtfully, and making sure the results mean something in practice.
-
-I have worked with audio, images, and telematics data, and I enjoy digging into time series problems, experiment design, and error analysis. These are usually the parts of a project that matter most but get the least attention.
-
-- Recently exploring time series data for operational problems, synthetic data generation, and safety focused telemetry analysis  
-- I care about clean experimental design, understanding failure modes, and validating results properly  
-- Open to data and analytics internships and applied ML projects where models are actually used  
-- Toronto, Eastern Time  
-- Email: furlanomichael02@gmail.com  
-- LinkedIn: https://linkedin.com/in/michaelfurlano  
+- 🔍 Retrieval-augmented generation, evaluation design, small-data and imbalanced problems, time series
+- 🧪 I measure before I claim: every project below ships with a reproducible evaluation, and several of them caught real bugs that way
+- 💼 Open to **ML / AI engineering** roles
+- 📍 Toronto (Eastern Time) · [LinkedIn](https://linkedin.com/in/michaelfurlano) · furlanomichael02@gmail.com
 
 ---
 
-## Featured Projects
+## Featured projects
 
-### CampusTech Connect
+### 🤖 [discord-rag-backend](https://github.com/Mfurlan03/discord-rag-backend): RAG FAQ bot with a retrieval eval harness
+FastAPI service + Discord bot that answers questions from a document base with cited sources.
+Pluggable retrieval (MongoDB Atlas Vector Search, or in-memory **dense / BM25 / hybrid RRF**),
+any OpenAI-compatible LLM, and a **36-question labeled eval** (Hit@k, MRR) that compares
+chunking strategies and retrievers. Graceful degradation, no-secret config endpoint,
+31 offline tests via dependency injection, Docker + CI.
+<br>`Python` `FastAPI` `sentence-transformers` `MongoDB Atlas` `Docker` `GitHub Actions`
 
-A peer to peer laptop marketplace designed specifically for university students, with a focus on trust and relevance.
+### 📉 [metricguard](https://github.com/Mfurlan03/metricguard): detecting KPI gaming (Goodhart's Law) in time series
+Python package and CLI that flags when a KPI decouples from the outcome it's supposed to track,
+using interpretable, noise-scaled signals. Ships a **labeled detection benchmark** (ROC-AUC,
+false-positive rate, window IoU) with constants calibrated on held-out seeds. The benchmark
+exposed a scale bug that flagged 100% of clean series; the fix took ROC-AUC from 0.49 to 1.00
+on that scenario.
+<br>`Python` `pandas` `NumPy` `pytest` `GitHub Actions`
 
-I worked on the backend, building services for authentication, listings, and pricing features, including role based access for buyers and sellers. I also helped design features like wishlists with target prices and comparisons against external marketplaces.
+### 🎵 [multi-output-audio-regression](https://github.com/Mfurlan03/multi-output-audio-regression): predicting 11 music attributes from raw audio
+librosa feature pipeline → per-target Random Forest and a GRU over frame sequences. Showed
+that raw averaged MSE was 97% tempo and hid everything else, and moved evaluation to
+per-target R² against a mean baseline. A synthetic sanity dataset revealed that a joint
+multi-output forest lets noisy targets hijack shared splits.
+<br>`Python` `PyTorch` `librosa` `scikit-learn`
 
-**Tech:** Java 17, Spring Boot, Docker, Swagger  
-**Repo:** https://github.com/Mfurlan03/campustech-connect
+### 🏀 [nba-draft-success](https://github.com/Mfurlan03/nba-draft-success): career-tier prediction from pre-draft data
+Team project. Scraped and merged college, combine and NBA data; built a leakage-guarded
+pipeline with repeated CV, ordinal metrics (quadratic-weighted kappa) and a label-permutation
+test. The honest result: on 109 matched players no model beats chance significantly
+(p = 0.27), and the bottleneck is data matching, not model choice.
+<br>`Python` `scikit-learn` `pandas`
 
----
-
-### Multi Output Audio Feature Regression
-
-An end to end project exploring how musical attributes can be predicted directly from raw audio.
-
-I built the full pipeline from data collection and preprocessing to feature extraction and modeling, then compared a Random Forest baseline with a GRU based neural network. A major focus of this project was analyzing per feature errors to understand where models performed well and where they struggled.
-
-**Repo:** https://github.com/Mfurlan03/multi-output-audio-regression
-
----
-
-### NBA Draft Success Prediction
-
-A data driven look at how pre draft information relates to long term NBA career outcomes.
-
-I cleaned and combined college statistics, physical measurements, and draft data, then compared interpretable baseline models with neural networks. Rather than focusing only on accuracy, I spent time looking at calibration, error patterns, and consistent failure cases.
-
-**Repo:** https://github.com/Mfurlan03/nba-draft-success
+### 💻 [campustech-connect](https://github.com/Mfurlan03/campustech-connect): student laptop marketplace
+Team project: Spring Boot REST API with JWT auth, buyer/seller roles, wishlists with price
+alerts, program-based recommendations and external price comparison.
+<br>`Java 17` `Spring Boot` `Spring Security` `Swagger`
 
 ---
 
 ## Skills
 
-- **Core:** Python, PyTorch, NumPy, Pandas, scikit learn  
-- **Data and Visualization:** Tableau, Power BI, Matplotlib  
-- **Tools:** Git, VS Code, Jupyter, Colab  
-- **Also used:** SQL, Java, C++, R, MATLAB, HTML, CSS, JavaScript  
+- **ML / AI:** PyTorch, scikit-learn, sentence-transformers, RAG (vector, BM25, hybrid retrieval), evaluation design
+- **Engineering:** Python, FastAPI, Docker, GitHub Actions, pytest, Git, SQL, MongoDB
+- **Data:** pandas, NumPy, Matplotlib, Tableau, Power BI
+- **Also used:** Java, C++, R, MATLAB, JavaScript
 
 ---
 
-If you are working on a dataset that needs a thoughtful approach, or want to talk about applied ML, analytics, or engineering problems, feel free to reach out.
+If you're working on a problem where getting the evaluation right matters, I'd love to talk.
